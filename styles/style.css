@@ -1,0 +1,220 @@
+/*Start egen design*/
+html,
+body {
+  font-family: "Arima Madurai", cursive;
+  color: #1F1F1F;
+  background-color: #FFF;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/*-----FONTS & GENERAL-----*/
+h1 {
+  font-size: 175%;
+  font-family: "Arima Madurai", cursive;
+}
+
+h2 {
+  font-size: 150%;
+  font-family: "Arima Madurai", cursive;
+}
+
+p,
+a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 100%;
+  line-height: 1.5em;
+  color: #1F1F1F;
+  text-decoration: none;
+
+  /*padding-bottom: 15px;*/
+}
+
+p{
+  padding: 8px 0px;
+}
+
+/*-----TOP NAVIGATION-----*/
+
+.header h1, .header a {
+  /*margin: 30px 30px 0px 0px;*/
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  font-family: "Arima Madurai", cursive;
+  display:block;
+ 
+}
+
+.header h2 {
+  /*margin: -10px 30px 30px 0px;*/
+  font-size: 80%;
+  text-align: left;
+
+}
+
+.nav {
+  /*padding: 0px 100px 0px 0px;*/
+
+  display: flex;
+  float: right;
+  flex-wrap: nowrap;
+}
+
+.nav a {
+  font-family: 'Roboto', sans-serif;
+  float: right;
+  text-align: left;
+  padding: 2% 3% 2% 3%;
+  margin: 0% 2%;
+  text-decoration: none;
+  color: #1F1F1F;
+  white-space: nowrap;
+  font-size: 75%; 
+}
+
+.nav a:hover {
+  color: lightgreen;
+}
+
+/*-----CONTENT SETUP-----*/
+
+.section {
+  width: 80%;
+  padding: 2% 10%;
+}
+
+.separator {
+  width: 100%;
+  /*border-top: 1px dashed #1F1F1F;*/
+}
+
+.shadow-drop {
+  /*border-radius: 50%;*/
+  position: absolute;
+  /*box-shadow: inset 2px 2px 10px 5px rgba(0, 0, 0, 0.5);*/
+}
+
+.image-wrapper, .image-wrapper img {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  height: 300px;
+  border-radius: 10px;
+}
+img {
+  
+  margin:1%;
+  
+}
+
+/*-----INTRO SECTION-----*/
+#intro-text {
+  font-size: 150%;
+  font-weight: normal;
+}
+
+#intro p {
+  padding: 8px 0px;
+  font-size: 100%;
+}
+
+#intro a {
+  text-decoration: underline;
+  padding: 30px 0px;
+  font-size: 100%;
+}
+
+#intro a:hover {
+  color: black;
+}
+
+#intro img {
+  height: 200px;
+}
+
+/*-----PROJECT SECTION-----*/
+#project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  float: left;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 10px 10px 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  position: relative;
+  text-align: center;
+  
+}
+
+.project h2 {
+  text-align: left; 
+  /*position: absolute;
+  /*top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+}
+.project p {
+  text-align: left; 
+  /*position: absolute;
+  /*top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60%;*/
+}
+.project img {
+  height: 200px;
+  float: left;
+
+
+}/*
+.image-cover {
+  width: 300px;
+  height: 300px;
+  float: left;
+  color: rgba(255, 255, 255, 0);
+}
+
+.image-cover:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  background-image: url("https://cdn.glitch.com/08456b8e-91a7-4c1d-9467-7a678440c2cd%2Fpexels-photo-326311.jpeg?v=1597867138308");
+  /*box-shadow: none;
+}
+*/
+/*-----ABOUT ME SECTION-----*/
+
+
+
+/*-----CONTACT SECTION-----*/
+
+
+/*-----PROJECT SIDES-----*/
+
+.project-header-image-wrapper, .project-header-image-wrapper img {
+  padding: auto 0px;
+  margin: 0px 0px 0px 0px;
+  width: 300px;
+
+  
+}
+.project-image-wrapper img {
+  object-fit: fill;
+
+  width: 400px;
+}
+
+#poco-final {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#poco-final img {
+  width: 30%;
+}

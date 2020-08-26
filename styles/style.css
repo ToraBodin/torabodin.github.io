@@ -1,7 +1,7 @@
 /*Start egen design*/
 html,
 body {
-  font-family: "Arima Madurai", cursive;
+  font-family: 'Roboto', sans-serif;
   color: #1F1F1F;
   background-color: #FFF;
   width: 100vw;
@@ -12,12 +12,14 @@ body {
 /*-----FONTS & GENERAL-----*/
 h1 {
   font-size: 175%;
-  font-family: "Arima Madurai", cursive;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: "Arima Madurai", cursive;*/
 }
 
 h2 {
   font-size: 150%;
-  font-family: "Arima Madurai", cursive;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: "Arima Madurai", cursive;*/
 }
 
 p,
@@ -32,19 +34,50 @@ a {
   /*padding-bottom: 15px;*/
 }
 
-p{
-  padding: 8px 0px;
+h1,h2,p,ul{
+  padding-bottom:16px;
 }
 
+p > a {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: orangered;
+}
+blockquote{
+  padding: 8%;
+  font-size:120%;
+  font-style: italic;
+  text-align: center;
+}
+
+b{
+  font-weight: 300;
+}
+
+ul{
+  list-style-position: inside;
+  list-style-type: circle;
+}
 /*-----TOP NAVIGATION-----*/
+
+.header {
+  position: absolute;
+  background-color:white;
+  height: 20px;
+  z-index: 1000;
+  width: 80%;
+  padding: 2% 10%;
+}
 
 .header h1, .header a {
   /*margin: 30px 30px 0px 0px;*/
   font-size: 100%;
   margin: 0px;
-  padding: 0px;
+  padding: 0%;
   text-align: left;
-  font-family: "Arima Madurai", cursive;
+  /*font-family: "Arima Madurai", cursive;*/
   display:block;
  
 }
@@ -58,33 +91,44 @@ p{
 
 .nav {
   /*padding: 0px 100px 0px 0px;*/
-
-  display: flex;
+  
   float: right;
-  flex-wrap: nowrap;
+  
+  list-style-type: none;
+  overflow: auto;
+  
 }
-
-.nav a {
+.nav li{
   font-family: 'Roboto', sans-serif;
-  float: right;
-  text-align: left;
-  padding: 2% 3% 2% 3%;
-  margin: 0% 2%;
+  display:inline-block;
+  float:right;
+  text-align: right;
+
+
+  padding: 0% 1% 0% 3%;
+  
   text-decoration: none;
   color: #1F1F1F;
   white-space: nowrap;
-  font-size: 75%; 
+  font-size: 100%; 
+  
 }
 
 .nav a:hover {
-  color: lightgreen;
+  color: orangered;
 }
 
 /*-----CONTENT SETUP-----*/
 
+.content {
+  padding-top:60px;
+}
+
 .section {
   width: 80%;
   padding: 2% 10%;
+  height: auto;
+  overflow: hidden;
 }
 
 .separator {
@@ -101,14 +145,10 @@ p{
 .image-wrapper, .image-wrapper img {
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
-  height: 300px;
+  /*height: 300px;*/
   border-radius: 10px;
 }
-img {
-  
-  margin:1%;
-  
-}
+
 
 /*-----INTRO SECTION-----*/
 #intro-text {
@@ -127,13 +167,7 @@ img {
   font-size: 100%;
 }
 
-#intro a:hover {
-  color: black;
-}
 
-#intro img {
-  height: 200px;
-}
 
 /*-----PROJECT SECTION-----*/
 #project-container {
@@ -144,72 +178,35 @@ img {
 .project {
   float: left;
   padding: 0px 0px 0px 0px;
-  margin: 0px 10px 10px 0px;
+  margin: 0px;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
   position: relative;
-  text-align: center;
-  
 }
 
-.project h2 {
-  text-align: left; 
-  /*position: absolute;
-  /*top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
-}
-.project p {
-  text-align: left; 
-  /*position: absolute;
-  /*top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60%;*/
-}
 .project img {
-  height: 200px;
-  float: left;
-
-
-}/*
-.image-cover {
-  width: 300px;
-  height: 300px;
-  float: left;
-  color: rgba(255, 255, 255, 0);
+  height: 400px;
 }
-
-.image-cover:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  background-image: url("https://cdn.glitch.com/08456b8e-91a7-4c1d-9467-7a678440c2cd%2Fpexels-photo-326311.jpeg?v=1597867138308");
-  /*box-shadow: none;
+/*
+.project:hover {
+  background-color: orange;
 }
 */
+
 /*-----ABOUT ME SECTION-----*/
 
 
 
 /*-----CONTACT SECTION-----*/
-
+#contact p{
+  padding: none;
+  line-height: 1vw;
+}
 
 /*-----PROJECT SIDES-----*/
 
-.project-header-image-wrapper, .project-header-image-wrapper img {
-  padding: auto 0px;
-  margin: 0px 0px 0px 0px;
-  width: 300px;
-
-  
-}
-.project-image-wrapper img {
-  object-fit: fill;
-
-  width: 400px;
-}
-
+/*POCO*/
 #poco-final {
   display: flex;
   flex-wrap: wrap;
@@ -217,4 +214,48 @@ img {
 
 #poco-final img {
   width: 30%;
+  height: 30%;
+  padding:1.5%;
 }
+
+@media only screen and (max-width: 1200px) {
+	/* For mobile phones: */
+	[class*="col-"] {
+	  width: 49%;
+  }
+  
+  .nav{
+    width: 50%;
+  }
+  
+	img {
+   
+		width: 100%;
+		
+	}
+
+  }
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	[class*="col-"] {
+	  width: 100%;
+  }
+  
+	.col-left,
+	.col-right{
+    float: left;
+    padding:0px;
+  }
+  
+  img{
+    width: 50%; 
+  }
+  .nav{
+    width: 60%;
+  }
+  
+  .project img {
+    height: unset;
+  }
+ 
+  }

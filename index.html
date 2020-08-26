@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/structure.css" />
   <link rel="stylesheet" href="styles/style.css" />
 
+
   <!-- import the webpage's javascript file -->
   <!--<script src="/script.js" defer></script>-->
 
@@ -22,12 +23,12 @@
 
 <body>
   <div class="container">
-    <div class="header row section">
-      <div class="nav">
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#about-me">About me</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
+    <div class="header row ">
+      <ul class="nav col-4">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#about-me">About me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
       <h1><a href="index.html">Tora Bodin</a></h1>
       <!--<h2>Interaction Designer / Educator / Storyteller</h2>-->
 
@@ -36,11 +37,10 @@
       <div class="separator"></div>
       <!--INTRODUCTION SECTION-->
       <div id="intro" class="row section">
-        <div id="photo-wrapper" class="image-wrapper col-2 right-image">
-          <img id="intro-image" src="images/intro_selfie.jpeg" />
-          <!--<div id="intro-image-cover" class="shadow-drop"></div>-->
-        </div>
-        <div class="col-3 left-text">
+
+        <img class="col-3 col-right" id="intro-image" src="images/intro_selfie.jpeg" />
+
+        <div class="col-6 col-left">
           <p>
             <span id="intro-text">Hello there!</span>
             I am an interaction design master student based in Gothenburg,
@@ -63,19 +63,18 @@
         <div id="project-container">
           <div id="pola" class="project">
             <a href="pola.html">
-              <img src="https://cdn.glitch.com/08456b8e-91a7-4c1d-9467-7a678440c2cd%2Fcompare.jpg?v=1597862829174" />
-              <div class="image-cover shadow-drop">
-
+              <img src="images/pola/intro.jpeg" />
+              <div class="text-box">
+                <h2>
+                  POLA
+                </h2>
+                <p>
+                  SLOW DESIGN ARTEFACT (Active project)
+                </p>
               </div>
-              <h2>
-                POLA
-              </h2>
-              <p>
-                SLOW DESIGN ARTEFACT
-              </p>
             </a>
           </div>
-
+          <!--
           <div id="blindwalk" class="project">
             <a href="blindwalk.html">
               <img
@@ -83,27 +82,31 @@
               <div class="image-cover shadow-drop">
 
               </div>
-              <h2>
-                BLINDWALK
-              </h2>
-              <p>
-                CRITICAL DESIGN INSTALLATION
-              </p>
+              <div class="text-box">
+                <h2>
+                  BLINDWALK
+                </h2>
+                <p>
+                  CRITICAL DESIGN INSTALLATION
+                </p>
+              </div>
             </a>
           </div>
-
+        -->
           <div id="poco" class="project">
             <a href="poco.html">
               <img src="images/poco/poco_header.png" />
               <div class="image-cover shadow-drop">
 
               </div>
-              <h2>
-                POCO
-              </h2>
-              <p>
-                MIDDLE SCHOOL EDU-GAME
-              </p>
+              <div class="text-box">
+                <h2>
+                  POCO
+                </h2>
+                <p>
+                  MIDDLE SCHOOL EDU-GAME
+                </p>
+              </div>
             </a>
           </div>
         </div>
@@ -114,104 +117,99 @@
         <h1>
           About me
         </h1>
-        <div id="about-design" class="about-section row">
-          <div class="col-2 image-wrapper right-image">
-            <img src="images/workshop.jpeg" />
-          </div>
-          <div class="col-3 about-textbox left-text">
-            <h2>
-              People-pleasing designer
-            </h2>
-
-            <p>
-              When designing technology, I love simple solutions. The projects
-              that I am most proud over combine an elegant, straightforward
-              solution with a rich overall experience full of hidden aspects.
-            </p>
-            <p>
-              My background in cognitive science ensures that I am always
-              working from a human-centered perspective. I thoroughly enjoy
-              explorative research, co-design workshops and discovering new
-              points-of-view.
-            </p>
-          </div>
-        </div>
-        <div id="about-education" class="about-section row">
-          <div class="col-2 image-wrapper left-image">
-            <img src="images/education.png" />
-          </div>
-          <div class="col-3 about-textbox right-text">
-            <h2>
-              Education enthusiast
-            </h2>
-            <p>
-              There are few things that I am as passionate about as science
-              education, for kids and adults alike. It is my firm belief that
-              access to knowledge is a fundamental democratic right. One of our
-              most important tasks for the years ahead is to make sure it is
-              available to all.
-            </p>
-            <p>
-              I am currently volunteering with the non-profit organisation
-              <a href="https://www.kodcentrum.se/">Kodcentrum</a>
-              for this exact reason, where we introduce children to the basic
-              workings of programming. You can also find me at the science centre
-              <a href="https://www.universeum.se/sv/">Universeum</a>
-              during the weekends, where my part-time job as a guide allows me
-              to introduce visitors to wonders that span from deep-sea creatures
-              to the end of the observable universe.
-            </p>
-          </div>
-        </div>
-        <div id="about-film" class="about-section row">
-          <div class="col-2 image-wrapper right-image">
-            <img src="images/filming.jpeg" />
-          </div>
-          <div class="col-3 about-textbox left-text">
-            <h2>
-              Part-time film producer
-            </h2>
-            <p>
-              During the past few years, I have hade the pleasure to co-lead
-              multiple film productions, both shorts and feature-length
-              projects. I am constantly looking for new ways to work with
-              creative storytelling, and am always up for the challenge of a
-              hybrid-platform project.
-            </p>
-            <p>
-              For more information about the productions I have been part of,
-              check out the production company
-              <a href="https://www.mantelpiece.se">Mantelpiece.</a>
-            </p>
-          </div>
-        </div>
-        <h2>
-          Skills
-        </h2>
       </div>
+      <div class="row section">
+
+        <img class="col-4 col-right" src="images/workshop.jpeg" />
+
+        <div class="col-5 col-left">
+          <h2>
+            People-pleasing designer
+          </h2>
+
+          <p>
+            When designing technology, I love simple solutions. The projects
+            that I am most proud over combine an elegant, straightforward
+            solution with a rich overall experience full of hidden aspects.
+          </p>
+          <p>
+            My background in cognitive science ensures that I am always
+            working from a human-centered perspective. I thoroughly enjoy
+            explorative research, co-design workshops and discovering new
+            points-of-view.
+          </p>
+        </div>
+      </div>
+      <div class="row section">
+
+        <img class="col-4 col-left" src="images/education.png" />
+
+        <div class="col-5 col-right">
+          <h2>
+            Education enthusiast
+          </h2>
+          <p>
+            There are few things that I am as passionate about as science
+            education, for kids and adults alike. It is my firm belief that
+            access to knowledge is a fundamental democratic right. One of our
+            most important tasks for the years ahead is to make sure it is
+            available to all.
+          </p>
+          <p>
+            I am currently volunteering with the non-profit organisation
+            <a href="https://www.kodcentrum.se/">Kodcentrum</a>
+            for this exact reason, where we introduce children to the basic
+            workings of programming. You can also find me at the science center
+            <a href="https://www.universeum.se/sv/">Universeum</a>
+            during the weekends, where my part-time job as a guide allows me
+            to introduce visitors to wonders that span from deep-sea creatures
+            to the end of the observable universe.
+          </p>
+        </div>
+      </div>
+      <div class="row section">
+
+        <img class="col-4 col-right" src="images/filming.jpeg" />
+
+        <div class="col-5 col-left">
+          <h2>
+            Part-time film producer
+          </h2>
+          <p>
+            During the past few years, I have hade the pleasure to co-lead
+            multiple film productions, both shorts and feature-length
+            projects. I am constantly looking for new ways to work with
+            creative storytelling, and am always up for the challenge of a
+            hybrid-platform project.
+          </p>
+          <p>
+            For more information about the productions I have been part of,
+            check out the production company
+            <a href="https://www.mantelpiece.se">Mantelpiece.</a>
+          </p>
+        </div>
+      </div>
+
+
       <div class="separator"></div>
       <!--CONTACT SECTION-->
       <div id="contact" class="row section">
-        <div class="image-wrapper right-image">
-          <img id="contact-image"
-            src="https://cdn.glitch.com/08456b8e-91a7-4c1d-9467-7a678440c2cd%2FImage__0382.jpg?v=1597787909048" />
-        </div>
 
-        <div class="col-3">
+        <div class="col-4 col-right">
           <h1>
             Contact
           </h1>
           <p>
-            I'm always up for a coffee!
+            Let's get in touch!
           </p>
           <p>
             Tora Bodin
           </p>
           <p>
-            mail. tora.bodin@gmail.com
+            tora.bodin@gmail.com
           </p>
           <p>
-            tel. +46 073-83 44 120
+            +46 073-83 44 120
           </p>
           <p>
             Sweden, Gothenburg/Umeå

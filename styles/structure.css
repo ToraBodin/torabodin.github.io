@@ -49,12 +49,12 @@ footer, header, hgroup, menu, nav, section {
 
 .col-left {
 	float: left;
-	padding-right: 1%
+	padding-right: 2.5%
 }
 
 .col-right {
 	float: right;
-	padding-left:1%;
+	padding-left:2.5%;
 	
 }
 
@@ -66,35 +66,35 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .col-1 {
-  width: 9;
+  width: 7.5%;
 }
 
 .col-2 {
-  width: 19%;
+  width: 17.5%;
 }
 
 .col-3 {
-  width: 29%;
+  width: 27.5%;
 }
 
 .col-4 {
-  width: 39%;
+  width: 37.5%;
 }
 
 .col-5 {
-  width: 49%;
+  width: 47.5%;
 }
 .col-6 {
-	width: 59%;
+	width: 57.5%;
   }
 .col-7 {
-	width: 69%;
+	width: 67.5%;
   }
 .col-8 {
-	width: 79%;
+	width: 77.5%;
   }
 .col-9 {
-	width: 89%;
+	width: 87.5%;
   }
 .col-10 {
 	width: 100%;

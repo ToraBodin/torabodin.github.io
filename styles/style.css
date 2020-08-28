@@ -2,6 +2,18 @@ html, body{
   font-family: 'Roboto',sans-serif;
 }
 
+.intro-text{
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
 a {
     color: orangered;
 
@@ -19,8 +31,15 @@ a:hover{
 
 .navbar li{
     text-align:right;
+    
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color:orangered;
+}
 img, .vid{
   padding-bottom: 30px;
  
@@ -62,9 +81,22 @@ blockquote{
   font-size: .75rem;
 }
 
+.contact-list{
+
+    list-style: none;
+}
+
+#contact{
+    padding-top: 30px;
+    border-top: 2px dashed orangered;
+    /*border-top-width: 100%;*/
+}
 @media only screen and (max-width: 720px) {
     .card img{
         width:100%;
         height:auto;
     }    
   }
+
+
+ 

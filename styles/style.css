@@ -1,9 +1,7 @@
 html, body{
   font-family: 'Roboto',sans-serif;
 }
-.row {
-  padding-bottom: 30px;
-}
+
 
 .navbar{
   padding-left:0px;
@@ -12,16 +10,15 @@ html, body{
 
 }
 
-img{
-  padding-bottom: 0px;
+img, .vid{
+  padding-bottom: 30px;
+ 
 }
 
-.my-text-box{
-  padding-top: 5%;
-}
-
+/*--MY WORK--*/
 .my-card-deck{
   display:flex;
+  flex-wrap: wrap;
   
 }
 
@@ -30,9 +27,11 @@ img{
   margin-right:1.25rem;
 }
 
-.card img{
+.card-img-top{
   height: 18rem;
   width:auto;
+  padding-bottom:0px;
+  border-radius:0px;
 }
 
 .card-body{
@@ -46,3 +45,10 @@ img{
 .card-text{
   font-size: .75rem;
 }
+
+@media only screen and (max-width: 720px) {
+    .card img{
+        width:100%;
+        height:auto;
+    }    
+  }

@@ -1,251 +1,47 @@
-/*Start egen design*/
-html,
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #1F1F1F;
+html, body{
+  font-family: 'Roboto',sans-serif;
+}
+.row {
+  padding-bottom: 30px;
+}
+
+.navbar{
+  padding-left:0px;
+  padding-right: 0px;
   background-color: #FFF;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-}
-
-/*-----FONTS & GENERAL-----*/
-h1 {
-  font-size: 175%;
-  font-family: 'Roboto', sans-serif;
-  /*font-family: "Arima Madurai", cursive;*/
-}
-
-h2 {
-  font-size: 150%;
-  font-family: 'Roboto', sans-serif;
-  /*font-family: "Arima Madurai", cursive;*/
-}
-
-p,
-a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 100%;
-  line-height: 1.5em;
-  color: #1F1F1F;
-  text-decoration: none;
-
-  /*padding-bottom: 15px;*/
-}
-
-h1,h2,p,ul{
-  padding-bottom:16px;
-}
-
-p > a {
-  text-decoration: underline;
-}
-
-a:hover {
-  color: orangered;
-}
-blockquote{
-  padding: 8%;
-  font-size:120%;
-  font-style: italic;
-  text-align: center;
-}
-
-b{
-  font-weight: 300;
-}
-
-ul{
-  list-style-position: inside;
-  list-style-type: circle;
-}
-/*-----TOP NAVIGATION-----*/
-
-.header {
-  position: absolute;
-  background-color:white;
-  height: 20px;
-  z-index: 1000;
-  width: 80%;
-  padding: 2% 10%;
-}
-
-.header h1, .header a {
-  /*margin: 30px 30px 0px 0px;*/
-  font-size: 100%;
-  margin: 0px;
-  padding: 0%;
-  text-align: left;
-  /*font-family: "Arima Madurai", cursive;*/
-  display:block;
- 
-}
-
-.header h2 {
-  /*margin: -10px 30px 30px 0px;*/
-  font-size: 80%;
-  text-align: left;
 
 }
 
-.nav {
-  /*padding: 0px 100px 0px 0px;*/
-  width:30%;
-  float: right;
-  list-style-type: none;
-  
-  
+img{
+  padding-bottom: 0px;
 }
-.nav li{
-  font-family: 'Roboto', sans-serif;
-  
-  text-align: left;
 
-  display:inline-block;
-  padding: 0% 2%;
-  
-  text-decoration: none;
-  color: #1F1F1F;
-  white-space: nowrap;
-  font-size: 100%; 
+.my-text-box{
+  padding-top: 5%;
+}
+
+.my-card-deck{
+  display:flex;
   
 }
 
-.nav a:hover {
-  color: orangered;
+.card {
+  border:none;
+  margin-right:1.25rem;
 }
 
-/*-----CONTENT SETUP-----*/
-
-.content {
-  padding-top:60px;
+.card img{
+  height: 18rem;
 }
 
-.section {
-  width: 80%;
-  padding: 1% 10%;
-  height: auto;
-  overflow: hidden;
+.card-body{
+  padding: 1rem 0rem;
 }
 
-.separator {
-  width: 100%;
-  /*border-top: 1px dashed #1F1F1F;*/
+.card-title {
+  margin-bottom:.12rem;
 }
 
-
-/*-----INTRO SECTION-----*/
-#intro-text {
-  font-size: 150%;
-  font-weight: normal;
+.card-text{
+  font-size: .75rem;
 }
-
-#intro p {
-  padding: 8px 0px;
-  font-size: 100%;
-}
-
-#intro a {
-  text-decoration: underline;
-  padding: 30px 0px;
-  font-size: 100%;
-}
-
-
-
-/*-----PROJECT SECTION-----*/
-#project-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.project {
-  float: left;
-  padding: 0px 0px 0px 0px;
-  margin: 0px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  position: relative;
-}
-
-.project img {
-  height: 400px;
-}
-/*
-.project:hover {
-  background-color: orange;
-}
-*/
-
-/*-----ABOUT ME SECTION-----*/
-
-
-
-/*-----CONTACT SECTION-----*/
-#contact p{
-  padding: none;
-  line-height: 1vw;
-}
-
-/*-----PROJECT SIDES-----*/
-  
-
-/*POCO*/
-#poco-final {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#poco-final img {
-  width: 30%;
-  height: 30%;
-  padding:1.5%;
-}
-
-/*
-
-@media only screen and (max-width: 1200px) {
-	/* For mobile phones: *
-	[class*="col-"] {
-	  width: 49%;
-  }
-  
-  .nav{
-    width: 50%;
-  }
-  
-	img {
-   
-		width: 100%;
-		
-	}
-
-  }
-  */
-@media only screen and (max-width: 768px) {
-	/* For mobile phones: */
-	[class*="col-"] {
-	  width: 100%;
-  }
-  
-	.col-left,
-	.col-right{
-    float: left;
-    padding:0px;
-  }
-  
-  img{
-    width: 50%; 
-  }
-  .nav{
-    width: 60%;
-  }
-  
-  .project img {
-    height: unset;
-    width: 100%;
-  }
- 
-  }

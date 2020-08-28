@@ -32,6 +32,7 @@ img{
 
 .card img{
   height: 18rem;
+  width:auto;
 }
 
 .card-body{

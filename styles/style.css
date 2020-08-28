@@ -2,7 +2,14 @@ html, body{
   font-family: 'Roboto',sans-serif;
 }
 
+a {
+    color: orangered;
 
+}
+
+a:hover{
+    color:red;
+}
 .navbar{
   padding-left:0px;
   padding-right: 0px;
@@ -10,9 +17,18 @@ html, body{
 
 }
 
+.navbar li{
+    text-align:right;
+}
+
 img, .vid{
   padding-bottom: 30px;
  
+}
+
+blockquote{
+    text-align: center;
+    padding: 1rem;
 }
 
 /*--MY WORK--*/

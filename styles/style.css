@@ -2,6 +2,9 @@ html, body{
   font-family: 'Roboto',sans-serif;
 }
 
+.content {
+    padding:30px 0px;
+}
 .intro-text{
     font-size: 1.25rem;
 }
@@ -80,6 +83,11 @@ blockquote{
 .card-text{
   font-size: .75rem;
 }
+
+.card:hover{
+    color:orangered;
+}
+
 
 .contact-list{
 

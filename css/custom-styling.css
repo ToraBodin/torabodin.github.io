@@ -1,0 +1,185 @@
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+  }
+  #mainNav .navbar-toggler {
+    
+    padding: 0.75rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.75rem;
+    color:#212529;
+    text-transform: uppercase;
+    border: 0;
+  }
+  #mainNav .navbar-brand {
+    color: #212529;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+  }
+  #mainNav .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.95rem;
+    color:#212529;;
+    letter-spacing: 0.0625em;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    /*background: linear-gradient(to bottom, yellow, rgba(222,112,6,0.2), #de7006),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzQwMCcgaGVpZ2h0PSc0MDAnPgoJPGRlZnMgaWQ9J2RlZnM0Jz4KCQk8ZmlsdGVyIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQicgaWQ9J2ZpbHRlcjMxMTUnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgbnVtT2N0YXZlcz0nMScgYmFzZUZyZXF1ZW5jeT0nMC45JyBpZD0nZmVUdXJidWxlbmNlMzExNycgLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSdyZXN1bHQ1JyB2YWx1ZXM9JzEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDYgLTMuNzUgJyBpZD0nZmVDb2xvck1hdHJpeDMxMTknIC8+CgkJCTxmZUNvbXBvc2l0ZSBpbjI9J3Jlc3VsdDUnIG9wZXJhdG9yPSdpbicgaW49J1NvdXJjZUdyYXBoaWMnIHJlc3VsdD0ncmVzdWx0NicgaWQ9J2ZlQ29tcG9zaXRlMzEyMScgLz4KCQkJPGZlTW9ycGhvbG9neSBpbj0ncmVzdWx0Nicgb3BlcmF0b3I9J2RpbGF0ZScgcmFkaXVzPScxMCcgcmVzdWx0PSdyZXN1bHQzJyBpZD0nZmVNb3JwaG9sb2d5MzEyMycgLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHg9JzAnIHk9JzAnIGlkPSdyZWN0Mjk4NScgZmlsbD0nI2VlZWVlZScvPiAgICAgCgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4PScwJyB5PScwJyBpZD0ncmVjdDI5ODUnIHN0eWxlPSdmaWxsOiNlMDg3Mjg7ZmlsdGVyOnVybCgjZmlsdGVyMzExNSknIC8+Cjwvc3ZnPg==);
+    */
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/fireBackground1.jpg");
+    */
+    background: url("../assets/fireBackground1.jpg");
+    
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    
+    /*font-size: 28vw;
+   
+    text-align: center;*/
+    /*color: #fed136;*/
+  }
+  
+  @media (min-width: 576px) {
+    #mainNav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: none;
+      background-color: white;
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand {
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand img {
+      height: 2rem;
+      transition: height 0.3s ease-in-out;
+    }
+    #mainNav.navbar-shrink {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #fff;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+      font-size: 1.25em;
+    }
+    #mainNav.navbar-shrink .navbar-brand svg,
+  #mainNav.navbar-shrink .navbar-brand img {
+      height: 1.5rem;
+    }
+    #mainNav .navbar-nav .nav-item {
+      margin-right: 1rem;
+    }
+    #mainNav .navbar-nav .nav-item:last-child {
+      margin-right: 0;
+    }
+  }
+
+ 
+  .intro-text h3{
+    font-size: 1.3rem;
+    padding-bottom:0;
+}
+
+.intro-text {
+
+  position: absolute;
+  z-index: 10;
+}
+
+
+
+  #my-work, #about-me, #contact{
+      background: white;
+  }
+
+.content{
+    /*background-image: url("../assets/fireBackground1.jpg");*/
+    /*background-image: url("../assets/space-stars-background_160081-158.jpg");*/
+
+    /*background-attachment: fixed;*/
+    /*margin: 10%;*/
+   
+}
+
+.my-card-deck{
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+
+.card {
+  border:none;
+  margin-right:1.25rem;
+}
+
+.card-img-top{
+  height: 12rem;
+  width:auto;
+  padding-bottom:0px;
+  border-radius:0px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.card-body{
+  padding: 1rem 0rem;
+}
+
+.card-title {
+  margin-bottom:.12rem;
+}
+
+.card-text{
+  font-size: .75rem;
+}
+
+.card:hover{
+  color:orangered;
+  /*background-image: url("../assets/fireBackground1.jpg");
+  background-attachment: relative;
+  background-size: cover;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;*/
+    
+}
+
+.card:hover > img{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+
+#about-me .row{
+  padding-bottom: 1rem; 
+}
+
+#resume a{
+  color: orangered;
+
+}
+#resume a:hover{
+  color: orangered;
+  text-decoration: none;
+
+}
+.portfolio-page{
+  background: white;
+}
+
+.portfolio-page h1{
+  padding-top: 50px;
+}
+
+.portfolio-page .row{
+  padding-bottom:20px;
+
+}
